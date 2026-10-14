@@ -1,0 +1,14 @@
+LIQUIDKEYS — BUILD AND INSTALL
+
+This ZIP contains the Android Studio project source, not a directly installable APK.
+
+1. On a Windows PC, install Android Studio from the official Android developer website.
+2. Extract LiquidKeys.zip.
+3. In Android Studio, select Open and choose the extracted LiquidKeys folder.
+4. Allow Gradle sync. Install Android SDK Platform 35 if prompted.
+5. Select Build > Build Bundle(s) / APK(s) > Build APK(s).
+6. Find app-debug.apk in app/build/outputs/apk/debug/.
+7. Transfer app-debug.apk to your Android phone and install it.
+8. Open LiquidKeys and follow the Enable / Choose keyboard buttons.
+
+This prototype currently includes the functioning keyboard foundation and customization settings. Advanced prediction, autocorrect, swipe typing, GIF search, and true floating/one-handed layouts are not implemented yet.

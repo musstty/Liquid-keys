@@ -1,0 +1,14 @@
+LIQUIDKEYS — BUILD AN APK WITHOUT INSTALLING ANDROID STUDIO
+
+Important: This project ZIP is source code, not an APK. The included GitHub Actions workflow can build the APK on GitHub's build servers.
+
+1. On a computer, sign in to https://github.com/ and create a new repository (for example: LiquidKeys). A free account is sufficient for a public repository. Do not upload private keys or secrets.
+2. Extract LiquidKeys-Android-Project.zip.
+3. Upload the contents of the extracted LiquidKeys folder to the repository. Make sure the .github/workflows/android.yml file is included. GitHub's web upload may hide dot-folders in some workflows; if so, use GitHub Desktop or git to upload the folder.
+4. Open the repository's Actions tab and select “Build LiquidKeys APK”. If the workflow has not started automatically, choose “Run workflow”.
+5. Wait for the workflow to finish. If it fails, open the run and inspect the build log; the source may need fixes.
+6. On a successful run, open the run summary and download the “LiquidKeys-debug-apk” artifact. Extract that artifact to get app-debug.apk.
+7. Transfer app-debug.apk to your Android phone, tap it, and follow Android's install prompts. Only install APKs you trust.
+8. Open LiquidKeys, enable it in Android Settings > Keyboard / Languages & input > On-screen keyboards / Manage keyboards, then select it as your default keyboard.
+
+This workflow is an unverified build setup. It does not guarantee the current source compiles, and it does not add unfinished features such as swipe typing or robust autocorrect. The APK is a debug build, suitable for testing, not a Play Store release.
